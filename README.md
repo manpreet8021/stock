@@ -1,31 +1,58 @@
-# stock
-It will fetch crypto information realtime using CoinGecko API. I used multiple library in this application. Some of them are
-1. Frontend (Next.js)
-  -redux
-  -redux-toolkit
-  -typescript
-  -react-bootstrap
-  -websocket
-2. Backend(Node.js)
-  -Express
-  -node-cron
-  -Websocket
-  -nodemon
-  -concurrently
-4. Database (MongoDb)
+# Stock
 
-# setup instruction
+This application fetches real-time cryptocurrency information using the CoinGecko API. It utilizes a variety of libraries and technologies across both frontend and backend to provide a robust solution.
 
-1. clone project into your computer
-2. install npm into your system
-3. open terminal from project location and run couple of command
-   a. npm install
-   b. cd frontend
-   c. npm install
-   d. cd ..
-   e. npm run dev
-5. After all the above steps the application will start running in your system on port 3000.
+## Technologies Used
 
-Note: Make sure that there is nothing running on port 3000 and 5000 on your system.
+### Frontend
+- **Next.js**
+- **Redux**
+- **Redux Toolkit**
+- **TypeScript**
+- **React Bootstrap**
+- **WebSocket**
 
+### Backend
+- **Node.js**
+- **Express**
+- **Node-Cron**
+- **WebSocket**
+- **Nodemon**
+- **Concurrently**
 
+### Database
+- **MongoDB**
+
+## Setup Instructions
+
+Follow these steps to set up and run the project on your local machine:
+
+1. **Clone the Project**
+
+   Clone the repository to your local machine
+2. **Install npm**
+
+   Ensure that you have Node.js and npm installed on your system. If not, download and install them from the official website.
+3. **Set Up the Project**
+  Open your terminal or command prompt and navigate to the project directory
+
+4. **Install Dependencies**
+  Run the following commands to install the necessary dependencies for both the backend and frontend:
+
+  - **Install backend dependencies:**
+    npm install
+
+  - **Navigate to the frontend directory:**
+    cd frontend
+
+  - **Install frontend dependencies:**
+    npm install
+  - **Return to the project root directory:**
+    cd ..
+5. **Start the Application**
+    Run the following command to start the application:
+    npm run dev
+6. This will start application on http://localhost:3000
+
+## Note
+Make sure that ports 3000 and 5000 are not in use by other applications on your system to avoid conflicts.
