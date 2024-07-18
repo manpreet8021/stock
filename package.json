@@ -1,0 +1,27 @@
+{
+  "name": "stock",
+  "version": "1.0.0",
+  "description": "It will fetch stock info real time where I will be using react and node for frontend and backend.",
+  "type": "module",
+  "main": "backend/index.js",
+  "scripts": {
+    "start": "node backend/index.js",
+    "front": "npm run dev --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run front\" ",
+    "server": "nodemon backend/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.1",
+    "node-cron": "^3.0.3",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.4"
+  }
+}
