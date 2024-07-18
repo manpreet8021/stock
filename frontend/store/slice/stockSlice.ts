@@ -26,7 +26,8 @@ const stockSlice = createSlice({
     initialState,
     reducers: {
         setData: (state, {payload}) => {
-            state.data = [...payload, ...state.data]
+            const updatedData = [...payload, ...state.data]
+            state.data = updatedData.slice(0, 20);
         },
         setSelectedCoin: (state, {payload}) => {
             state.selectedCoin = payload
